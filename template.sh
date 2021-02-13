@@ -13,15 +13,15 @@ do
     ;;
 
     "desktop")
-        echo -ne 
-"
+        echo -ne \
+"\
 [Desktop Entry]
 Name=
 Icon=
 Path=
 Exec=
 Categories=
-Category=
+Category=\
 " > $name
     ;;
 
