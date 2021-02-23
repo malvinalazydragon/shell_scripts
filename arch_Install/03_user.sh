@@ -8,9 +8,9 @@ echo Installing base apps
 sudo pacman -Syu
 sudo pacman -S mc vifm tmux lutris git gcc python3 xorg plasma kate konsole \
 sddm krita kdenlive soundkonverter blender obs-studio python-pip cmake lsof \
-fakeroot youtube-dl dolphin go mpv unrar libreoffice htop nvtop mypaint fish \
+fakeroot youtube-dl dolphin go mpv unrar libreoffice htop nvtop kolourpaint fish \
 ffmpeg wget pkg-config zip unzip unrar youtube-dl mono opera discord patch \
-okular spectacle gwenview xclip transmission-qt bluez-utils|| exit
+okular spectacle gwenview xclip transmission-qt bluez-utils imagemagick ntfs-3g|| exit
 
 sudo pacman -S wine || exit
 sudo pacman -S winetricks wine-gecko wine-mono || exit
