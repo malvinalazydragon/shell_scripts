@@ -10,7 +10,8 @@ sudo pacman -S mc vifm tmux lutris git gcc python3 xorg plasma kate konsole \
 sddm krita kdenlive soundkonverter blender obs-studio python-pip cmake lsof \
 fakeroot youtube-dl dolphin go mpv unrar libreoffice htop nvtop kolourpaint fish \
 ffmpeg wget pkg-config zip unzip unrar youtube-dl mono opera discord patch \
-okular spectacle gwenview xclip transmission-qt bluez-utils imagemagick ntfs-3g|| exit
+okular spectacle gwenview xclip transmission-qt bluez-utils imagemagick ntfs-3g neofetch\
+kamoso pulseaudio-bluetooth zathura xdotool python-kivy python-pygame|| exit
 
 sudo pacman -S wine || exit
 sudo pacman -S winetricks wine-gecko wine-mono || exit
@@ -23,10 +24,12 @@ makepkg -si && cd ../ && rm -rfv yay-git || exit
 
 echo installing aur apps
 cd
-yay -S pamac-aur || exit
-yay -S simplenote typora waterfox-g3-bin chromium zoom wps-office \
-pascalabcnet magicavoxel \
+yay -S simplenote typora waterfox-g3-bin chromium zoom\
+pascalabcnet magicavoxel downgrade python-kivymd \
 || exit
+
+echo downgrading wine
+doas downgrade wine
 
 echo fish install
 chsh marina
