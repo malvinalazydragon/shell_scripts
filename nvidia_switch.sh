@@ -17,7 +17,7 @@ then
             modprobe nvidia_modeset
             modprobe nvidia
         ;;
-    
+
     esac
         echo "System should restart, do you wish to do now? [y/n]"
         read -p ": " choose
@@ -28,5 +28,7 @@ then
             exit
         fi
 else
-    echo Permission Denied
+    echo "Nvidia switcher. Disable or enable nvidia modules, need root privileges"
+    echo -e "--on \t \t Turn on nvidia"
+    echo -e "--off \t \t Turn off nvidia"
 fi
