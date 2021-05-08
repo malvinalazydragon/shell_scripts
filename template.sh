@@ -22,6 +22,7 @@ Name=
 Icon=
 Path=
 Exec=
+Type=
 Categories=
 Category=\
 " > $name
